@@ -1,96 +1,80 @@
 <!DOCTYPE html>
 <html lang="es-ES">
-
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DChokaCase</title>
-    <style>
-        body {
-            background-color: rgba(255, 204, 152, 0.5);
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
-
 <body>
-    <nav align="right">
-        <a href="index.html"><button>inicio</button></a>
-        <a href="contacto.html"><button>contacto</button></a>
-        <a href="login.html"><button>login</button></a>
-    </nav><br>
-
     <header>
-        <img src="Img/Banner_Carcasas_DCHOKACASE.png" width="100%">
-    </header><br>
+        <div class="menu">
+          <img id="fotomenu" src="Img/schka.png" alt="">
+          <nav>
+              <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contacto.html">Nosotros</a></li>
+                <li><a href="login.html">Login</a></li>
+              </ul>
+          </nav>
+        </div>
+    </header><br><br><br>
 
-    <section>
-        <center>
-            <div>
-                <table border="0">
-                    <td width="50%" align="center">
-                        <video width="100%" controls align="left">
-                            <source src="multimedia/DChokaCaseInsta.mp4" type="video/mp4">
-                        </video>
-                        <h3>Video demostracion pagina instragram</h3>
+    <img id="banner" src="Img/Banner_Carcasas_DCHOKACASE.png"><br>
 
-                    </td>
-                    <td width="50%" align="center">
-                        <img src="Img/DCHOKACASE.png" width="500" height="375">
-                        <h3>Imagen demostracion</h3>
+    <section class="container">
+        <div class="container-index">
+            
 
-                    </td>
+            <div class="espacio">
+                <video controls>
+                    <source src="multimedia/DChokaCaseInsta.mp4" type="video/mp4">
+                </video><br><br>
 
-                </table>
-        </center>
-    </section><br>
+                <h3>Video demostracion pagina instragram</h3>
 
-    <h2 align="center">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h5><br>
+            </div>
+
+            <div class="espacio">
+
+                <img src="Img/DCHOKACASE.png" width="500" height="375"><br><br><br>
+                <h3>Imagen demostracion</h3>
+                
+            </div>
+            
+        </div>
+        <div class="espacio">
+
+            <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h2>
+
+        </div>
+        
+    </section><br><br><br>
 
 <footer>
-    <section>
-        <center>
-            <div>
-                <table border="0" style="background-color:rgba(212, 206, 218, 0.623)">
-                    <td width="25%" align="center">
-                        <table border="0">
-                            <tr>
-                                <td>
-                                    <p><img src="Img/DCHOKACASE.png" width="50" height="50"></p>
-                                </td>
-                                <td>
-                                    <p>DCHOKACASE</p>
-                                </td>
-                            </tr>
-                        </table>
 
-                    </td>
-                    <td width="50%" align="center">
-                        <p>
-                            <a href="https://www.cyberclick.es/politica-de-privacidad">Politca Privacidad</a>
-                            - <a href="https://www.cyberclick.es/politica-de-privacidad">Politca de Cookies</a>
-                            
-                        </p>
-                        <h6 align="center">DChokaCase. - Copiapo,Chile, Universidad de atacama</h6>
-                        
+    <div>
+        <p><img src="Img/DCHOKACASE.png">  DCHOKACASE</p>
+    </div>
 
-                    </td>
-                    <td width="25%" align="center">
-                        <div style="text-align:center">
-                            <p>DChokaCase</p>
-                            <p>
-                                Contacta en: <a href="https://www.instagram.com/d.choka_case/?hl=es">DChokaCase <img src="Img/insta.png"
-                                        width="5%"></a>
-                                <a href="https://api.whatsapp.com/send/?phone=56989608496&text&type=phone_number&app_absent=0"><img
-                                        src="Img/WhatsApp.svg.webp" width="5%"></a>
-                            </p>
-                
-                        </div>
-                    </td>
+    <div>
 
-                </table>
-        </center>
-    </section><br>
+        <a href="#">Politca Privacidad</a> - <a href="#">Politca de Cookies</a>
+        <h6 >DChokaCase. - Copiapo,Chile, Universidad de atacama</h6>
+
+    </div>
+
+    <div>
+        <p>
+            Contacta en: <a href="https://www.instagram.com/d.choka_case/?hl=es">DChokaCase <img id="fotoFo" src="Img/insta.png" ></a>
+            <a href="https://api.whatsapp.com/send/?phone=56989608496&text&type=phone_number&app_absent=0"><img id="fotoFo" src="Img/WhatsApp.svg.webp"></a>
+        </p>
+    </div>
+
 </footer>  
+
 </body>
 </html>
