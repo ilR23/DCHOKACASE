@@ -291,7 +291,7 @@ nav ul li a:hover::before {
     position: relative;
     width: 50px;
     background:
-    linear-gradient(90deg,#f32d5b, #ff009b);
+    linear-gradient(90deg,#c28d8d, #c28d8d);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -302,7 +302,7 @@ nav ul li a:hover::before {
     transition: scale 0.15s;
 }
 .social-links img{
-    width: 50px;
+    width: 100%;
     border-radius: 50%;
 }
 

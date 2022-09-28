@@ -260,7 +260,7 @@ img.derecha {
     position: relative;
     width: 50px;
     background:
-    linear-gradient(90deg,#f32d5b, #ff009b);
+    linear-gradient(90deg,#c28d8d, #c28d8d);
     display: inline-flex;
     align-items: center;
     justify-content: center;
