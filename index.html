@@ -1,89 +1,49 @@
 <!DOCTYPE html>
 <html lang="es-ES">
-    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DChokaCase</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
-    <header>
-        <div class="menu">
-          <img id="fotomenu" src="Img/schka.png" alt="">
-          <nav>
-              <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="login.html">Login</a></li>
-              </ul>
-          </nav>
+    <!--========================================================== -->
+                        <!-- NAV -->
+    <!--========================================================== -->
+
+    <nav  class="navbar navbar-expand-lg  p-3" style="background-color: #FFFFFF;" id="menu">
+        <div class="container">
+        <a class="navbar-brand" href="#">
+            <span id="navchoka" class="fs-5 text-opacity-75 fw-bold">DChokaCase</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+            </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-sample" type="submit">Buscar</button>
+            </form>
         </div>
-    </header><br><br><br>
-
-    <img id="banner" src="Img/Banner_Carcasas_DCHOKACASE.png"><br>
-
-    <section class="container">
-        <div class="container-index">
-            
-
-            <div class="espacio">
-                <video controls>
-                    <source src="multimedia/DChokaCaseInsta.mp4" type="video/mp4">
-                </video><br><br><br>
-
-                <h3>Video demostracion pagina instragram</h3>
-
-            </div>
-
-            <div class="espacio">
-
-                <img src="Img/DCHOKACASE.png" width="500" height="375"><br><br>
-                <h3>Imagen demostracion</h3>
-                
-            </div>
-            
-        </div>
-        <div class="espacio">
-
-            <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h2>
 
         </div>
-        
-    </section><br><br><br>
+    </nav>
 
-<footer>
-
-    <div>
-        <p><img src="Img/DCHOKACASE.png">  DCHOKACASE</p>
-    </div>
-
-    <div>
-
-        <a href="#">Politca Privacidad</a> - <a href="#">Politca de Cookies</a>
-        <h6>DChokaCase. - Copiapo,Chile, Universidad de atacama</h6>
-
-    </div>
-
-    <div>
-            <div class="socials">
-                <p>
-                    <a href="#" class="social-links"><img src="img/instagramicon.webp" alt="">
-                        <i class="ri-instagram-line"></i> 
-                    </a>
-                    <a href="#" class="social-links"><img src="Img/faceicon.png" alt="">
-                        <i class="ri-instagram-line"></i> 
-                    </a>
-                    <a href="#" class="social-links"><img src="Img/wspicon.png" alt="">
-                        <i class="ri-instagram-line"></i> 
-                    </a>
-                </p>               
-            </div>
-    </div>
-
-</footer>  
-
+    
+    
 </body>
 </html>
