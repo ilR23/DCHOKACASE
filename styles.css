@@ -79,7 +79,7 @@ body {
     background-color: #f3f3f3;
     display:flex;
     justify-content: center; 
-    padding-bottom: 100px; 
+    padding-bottom: 0px; 
 }
 
 
@@ -127,3 +127,61 @@ footer p{
     color:white;
 }
 
+/*=========================LOGIN================================*/
+
+.bg{
+    background-image: url(img/banner_login.webp);
+    background-position: center center;
+}
+
+#lg{
+    margin-top: 180px;
+    margin-bottom: 120px;
+    background-color: #FFFFFF;
+}
+
+.btn-ini { 
+    color: #B44628; 
+    background-color: #FFF1E5; 
+    border-color: #B44628; 
+  } 
+   
+  .btn-ini:hover, 
+  .btn-ini:focus, 
+  .btn-ini:active, 
+  .btn-ini.active, 
+  .open .dropdown-toggle.btn-ini { 
+    color: #B44628; 
+    background-color: #FFE3C2; 
+    border-color: #B44628; 
+  } 
+   
+  .btn-ini:active, 
+  .btn-ini.active, 
+  .open .dropdown-toggle.btn-ini { 
+    background-image: none; 
+  } 
+   
+  .btn-ini.disabled, 
+  .btn-ini[disabled], 
+  fieldset[disabled] .btn-ini, 
+  .btn-ini.disabled:hover, 
+  .btn-ini[disabled]:hover, 
+  fieldset[disabled] .btn-ini:hover, 
+  .btn-ini.disabled:focus, 
+  .btn-ini[disabled]:focus, 
+  fieldset[disabled] .btn-ini:focus, 
+  .btn-ini.disabled:active, 
+  .btn-ini[disabled]:active, 
+  fieldset[disabled] .btn-ini:active, 
+  .btn-ini.disabled.active, 
+  .btn-ini[disabled].active, 
+  fieldset[disabled] .btn-ini.active { 
+    background-color: #FFF1E5; 
+    border-color: #B44628; 
+  } 
+   
+  .btn-ini .badge { 
+    color: #FFF1E5; 
+    background-color: #B44628; 
+  }
