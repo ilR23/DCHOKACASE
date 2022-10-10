@@ -187,3 +187,29 @@ footer p{
     color: #FFF1E5; 
     background-color: #B44628; 
   }
+
+#creador{
+  justify-content: center;
+  text-align: justify;
+}
+
+h2{
+  justify-content: center;
+  text-align: justify;
+}
+
+.imc{
+  background-image: url(img/Persona1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.imd{
+  background-image: url(img/Persona2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.nosotros{
+  background-color: #FFE3C2;
+}
+
