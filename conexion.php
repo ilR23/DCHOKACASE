@@ -1,14 +1,16 @@
 <?php
 // Datos admin SQL
-$servidor = "localhost";
-$usuario  = "root";
-$password = "Pele2310";
-$database = "dchokacase";
-
+function conectar(){
+    $host="localhost";
+    $user="root";
+    $pass="Pele2310";
+    $bd="dchokacase";
 
 // Crear conexión
-$conexion = new mysqli($servidor, $usuario, $password, $database);
-if ($conexion->connect_error) {
-    die("Conexión fallida: ".$conexion->connect_error);
+    $con=mysqli_connect($host,$user,$pass);
+
+    mysqli_select_db($con,$bd);
+
+    return $con;
 }
 ?>

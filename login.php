@@ -26,13 +26,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    <a class="nav-link" aria-current="page" href="index.php">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    <a class="nav-link" href="nosotros.php">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
+                    <a class="nav-link" href="login.php">Login</a>
                 </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -76,7 +76,7 @@
                         <button type="submit" class="btn btn-ini">Iniciar Sesión</button>
                     </div>
                     <div class="my-3">
-                        <span>No tienes cuenta? <a href="registro.html">Registrate aqui</a></span><br>
+                        <span>No tienes cuenta? <a href="registro.php">Registrate aqui</a></span><br>
                         <span><a href="#">Recuperar password</a></span>
                     </div>
                 </form>

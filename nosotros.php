@@ -26,13 +26,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    <a class="nav-link" aria-current="page" href="index.php">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    <a class="nav-link" href="nosotros.php">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
+                    <a class="nav-link" href="login.php">Login</a>
                 </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -43,65 +43,67 @@
 
         </div>
     </nav>
+    <!--========================================================== -->
+                        <!-- CAROUSEL DE IMAGENES-->
+    <!--========================================================== -->
+   
+    <div id="carousel" class="mt-5 carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="Img/Sobre Nosotros  2.png" height="380px" class="d-block w-100" alt="">
+          </div>
+ 
+        </div>
+      
+    </div>
+    
 
     <!--========================================================== -->
-                        <!-- FORM -->
+                        <!-- Nosotros -->
     <!--========================================================== -->
-
     <div class="container w-75 shadow rounded" id="lg">
         <div class="row">
-            <div class="col bg">
-                
-            </div>
-            <div class="col">
-                <div class="text-end mt-3">
-                    <img src="img/schka.png" width="100" height="40" alt="chokl">
-                </div>
-                <h2 class="fw-bold text-center py-5">Registro</h2>
+            <div class="col nosotros">
+                <h2 class="fw-bold text-center  py-5"><img src="img/schka.png" width="200" height="80" alt="chokl"></h2>
+                <h2 class="fw-bold m-lg-3 p-3" id="creador">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</h2>
+                <h2 class="fw-bold m-lg-3 p-3" id="creador">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</h2>
 
-                <form action="">
-                    <div class="mb-4">
-                        <label for="usuario" class="form-label">Usuario</label>
-                        <input placeholder="Ingrese su Usuario" required type="text" class="form-control" name="email">
-                    </div>
-                    <div class="mb-4">
-                        <label for="nombre" class="form-label">Nombre y Apellido</label>
-                        <input required type="text" class="form-control" name="nombre" placeholder="Ingrese su nombre y apellido" >
-                    </div>
-                    <div class="mb-4">
-                        <label for="email" class="form-label">Correo electrónico</label>
-                        <input required type="email" class="form-control" name="email"  placeholder="Ingrese su correo electrónico" >
-                    </div>
-                    <div class="mb-4">
-                        <label for="password" class="form-label">Password</label>
-                        <input required type="password" class="form-control" name="password" placeholder="Ingrese su contraseña" >
-                    </div>
-                    <div class="mb-4">
-                        <input type="checkbox" name="connected" class="form-check-input">
-                        <label for="connected" class="form-check-label">Estoy de acuerdo con los <a href="#">Terminos y Condiciones</a></label>
-                    </div>
-                    <div class="d-grid">
-                        <button type="submit" class="btn btn-ini">Registrarse</button>
-                    </div>
-                    <div class="my-3">
-                        <span>¿Tienes cuenta? <a href="login.html">Inicia sesión aqui</a></span><br>
-                    </div>
-                </form>
-
-                
 
             </div>
         </div>
     </div>
+    <div class="container w-75 shadow rounded" id="lg">
+        <div class="row">
+            <div class="col nosotros">
+                <div class=" mt-3">
+                    <img src="img/schka.png" width="100" height="40" alt="chokl">
+                </div>
+                <h2 class="fw-bold text-center  py-1">Creador</h2>
+                <h2 class="fw-bold m-lg-3 p-3" id="creador">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</h2>
 
-
-
-
-
-
-
-
-
+            </div>
+            <div class="col nosotros imc">
+                
+            </div>
+        </div>
+    </div>
+    <div class="container w-75 shadow rounded" id="lg">
+        <div class="row">
+            <div class="col nosotros imd">
+                
+            </div>
+            <div class="col nosotros align-items-center">
+                <div class="text-end mt-3">
+                    <img src="img/schka.png" width="100" height="40" alt="chokl">
+                </div>
+                <h2 class="fw-bold text-center  py-1">Desarrolador</h2>
+                <h2 class="fw-bold m-lg-3 p-3" id="creador">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</h2>
+                
+    
+            </div>
+        </div>
+    </div>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
@@ -152,9 +154,7 @@
         <p class=" px-3 pt-3">DChokaCase &copy; Todos Los Derechos Reservados 2022</p>
     </div>
     <!-- Copyright -->
-</footer>
-
-    
+</footer>    
     
 </body>
 </html>
