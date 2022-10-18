@@ -56,7 +56,7 @@
                 <div class="row"> 
                     <div class="col">
                         <h1>Ingrese datos</h1>
-                            <form action="insertar.php" method="POST">
+                            <form action="insertarCRUD.php" method="POST">
 
                                 <input placeholder="Ingrese su Usuario" required type="text" class="form-control mb-3" name="usuario">
                                 <input required type="text" class="form-control mb-3" name="nombre" placeholder="Ingrese su nombre y apellido" >
@@ -70,7 +70,7 @@
 
                     <div class="col">
                         <table class="table" >
-                            <thead class="table-success table-striped" >
+                            <thead class="table-warning table-striped">
                                 <tr>
                                     <th>Usuario</th>
                                     <th>Nombre</th>
