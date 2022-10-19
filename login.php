@@ -1,3 +1,10 @@
+<?php 
+    include("conexion.php");
+    $con=conectar();
+
+    $sql="SELECT *  FROM administracion";
+    $query=mysqli_query($con,$sql);
+?>
 <!DOCTYPE html>
 <html lang="es-ES">
 <head>
@@ -59,14 +66,14 @@
                 </div>
                 <h2 class="fw-bold text-center py-5">Bienvenido</h2>
 
-                <form action="">
+                <form action="validar.php" method="POST">
                     <div class="mb-4">
                         <label for="email" class="form-label">Correo electrónico</label>
                         <input type="email" class="form-control" name="email" required placeholder="Ingrese su correo electrónico">
                     </div>
                     <div class="mb-4">
-                        <label for="password" class="form-label">Password</label>
-                        <input type="password" class="form-control" name="password" required placeholder="Ingrese su contraseña">
+                        <label for="pass" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="pass" required placeholder="Ingrese su contraseña">
                     </div>
                     <div class="mb-4">
                         <input type="checkbox" name="connected" class="form-check-input">

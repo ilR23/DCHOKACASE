@@ -95,7 +95,7 @@
                         <button type="submit" class="btn btn-ini">Registrarse</button>
                     </div>
                     <div class="my-3">
-                        <span>¿Tienes cuenta? <a href="login.html">Inicia sesión aqui</a></span><br>
+                        <span>¿Tienes cuenta? <a href="login.php">Inicia sesión aqui</a></span><br>
                     </div>
                 </form>
 
