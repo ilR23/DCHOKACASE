@@ -133,7 +133,8 @@ footer p{
 
 .bg{
     background-image: url(img/banner_login.webp);
-    background-position: center center;
+    
+    background-position: center; 
 }
 
 #lg{

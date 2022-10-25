@@ -80,6 +80,29 @@
                         <input required type="text" class="form-control" name="rut" placeholder="Ingrese su RUT" >
                     </div>
                     <div class="mb-4">
+                        <label for="direccion" class="form-label">Direccion</label>
+                        <input required type="text" class="form-control" name="direccion" placeholder="Ingrese su direccion" >
+                    </div>
+                    <div class="mb-4">
+                        <label for="hm" class="form-label">Genero</label>
+                        <p>
+                            <input type="radio" name="hm" value="hombre"> Hombre
+                            <input type="radio" name="hm" value="mujer"> Mujer
+                            <input type="radio" name="hm" value="no especifica"> No especifica
+                        </p>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="nacimiento" class="form-label">Fecha de nacimiento</label>
+                        <input required type="date" class="form-control" name="nacimiento" >
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="edad" class="form-label">Edad</label>
+                        <input required type="number" min="0" max="100" class="form-control" name="edad" >
+                    </div>
+                    
+                    <div class="mb-4">
                         <label for="email" class="form-label">Correo electrónico</label>
                         <input required type="email" class="form-control" name="email"  placeholder="Ingrese su correo electrónico" >
                     </div>

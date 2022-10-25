@@ -61,10 +61,20 @@
                                 <input placeholder="Ingrese su Usuario" required type="text" class="form-control mb-3" name="usuario">
                                 <input required type="text" class="form-control mb-3" name="nombre" placeholder="Ingrese su nombre y apellido" >
                                 <input required type="text" class="form-control mb-3" name="rut" placeholder="Ingrese su RUT" >
+                                <input required type="text" class="form-control mb-3" name="direccion" placeholder="Ingrese su direccion" >
+                                <p>Sexo: <br>
+                                    <input type="radio" name="hm" value="hombre"> Hombre
+                                    <input type="radio" name="hm" value="mujer"> Mujer
+                                    <input type="radio" name="hm" value="no especifica"> No especifica
+                                </p>
+                                <p>Fecha nacimiento: <br>
+                                    <input required type="date" class="form-control" name="nacimiento" >
+                                </p>
+                                <input required type="number" min="0" max="100" class="form-control mb-3" name="edad" >
                                 <input required type="email" class="form-control mb-3" name="email"  placeholder="Ingrese su correo electrónico" >
                                 <input required type="password" class="form-control mb-3" name="pass" placeholder="Ingrese su contraseña" >
                                 
-                                <input type="submit" class="btn btn-ini">
+                                <input type="submit" class="mb-4 btn btn-ini">
                             </form>
                     </div>
 
@@ -75,6 +85,10 @@
                                     <th>Usuario</th>
                                     <th>Nombre</th>
                                     <th>RUT</th>
+                                    <th>Direccion</th>
+                                    <th>Genero</th>
+                                    <th>Nacimiento</th>
+                                    <th>Edad</th>
                                     <th>Correo</th>
                                     <th>Password</th>
                                     <th></th>
@@ -90,6 +104,10 @@
                                             <th><?php  echo $row['usuario']?></th>
                                             <th><?php  echo $row['nombre']?></th>
                                             <th><?php  echo $row['rut']?></th>
+                                            <th><?php  echo $row['direccion']?></th>
+                                            <th><?php  echo $row['hm']?></th>
+                                            <th><?php  echo $row['nacimiento']?></th>
+                                            <th><?php  echo $row['edad']?></th>
                                             <th><?php  echo $row['email']?></th>
                                             <th><?php  echo $row['pass']?></th>    
                                             <th><a href="actualizar.php?id=<?php echo $row['rut'] ?>" class="btn btn-info">Editar</a></th>

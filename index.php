@@ -1,3 +1,20 @@
+<?php 
+    session_start();
+    include("conexion.php");
+    $con=conectar();
+
+    $sql="SELECT *  FROM administracion";
+    $query=mysqli_query($con,$sql);
+
+    
+    echo $_SESSION['nombre'];
+    echo $_SESSION['email'];
+    echo $_SESSION['pass'];
+    echo $_SESSION['usuario'];
+
+    
+    
+?>
 <!DOCTYPE html>
 <html lang="es-ES">
 <head>
@@ -41,6 +58,10 @@
                     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                     <button class="btn btn-sample" type="submit">Buscar</button>
                 </form>
+                <div class="text-warning">
+                    <img class="m-3" src="img/usuario.png" alt="usuario" width="30" height="20">
+                    <?php echo $_SESSION['email']; ?>
+                </div>
             </div>
 
         </div>
@@ -48,14 +69,13 @@
     <!--========================================================== -->
                         <!-- CAROUSEL DE IMAGENES-->
     <!--========================================================== -->
-   
+    
     <div id="carousel" class="mt-5 carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="3000">
             <img src="Img/Banner_Carcasas_2520x630.webp" height="380px" class="d-block w-100" alt="">
           </div>
           
- 
           <div class="carousel-item" data-bs-interval="3000">
             <img src="Img/imgbanner2.jpg" class="d-block w-100" alt="...">
           </div>
@@ -86,7 +106,12 @@
         <h1 class="p-3 fs-2 border-top border-3">Personaliza tus carcasas en <span class="colorletra">DChokaCase</span></h1>
          <p class="p-3  fs-4">
             <span class="colorletra">DChokaCase</span> es donde donde te ayudamos a que tengas tu carcasa favorita        
-         </p>   
+         </p>  
+         <?php  echo $_SESSION['nombre'];
+                echo $_SESSION['email'];
+                echo $_SESSION['pass'];
+                echo $_SESSION['usuario']; 
+        ?> 
     </section>
     
     <!--========================================================== -->
