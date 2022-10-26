@@ -18,7 +18,7 @@ $sql="INSERT INTO administracion VALUES('$usuario','$nombre','$rut','$direccion'
 $query= mysqli_query($con,$sql);
 
 if($query){
-    Header("Location: registro.php");
+    Header("Location: login.php");
     
 }else {
 }

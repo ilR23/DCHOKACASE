@@ -15,6 +15,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
+
+    <title>Confirmación de envío de registro</title>
+    <script language="JavaScript">
+    function pregunta(){
+        if (confirm('¿Estas seguro de enviar este registro?')){
+        document.tuformulario.submit()
+        }
+    }
+    </script>
 </head>
 <body>
     <!--========================================================== -->
@@ -115,7 +124,7 @@
                         <label for="connected" class="form-check-label">Estoy de acuerdo con los <a href="#">Terminos y Condiciones</a></label>
                     </div>
                     <div class="d-grid">
-                        <button type="submit" class="btn btn-ini">Registrarse</button>
+                        <button type="submit" onclick="pregunta()" class="btn btn-ini">Registrarse</button>
                     </div>
                     <div class="my-3">
                         <span>¿Tienes cuenta? <a href="login.php">Inicia sesión aqui</a></span><br>

@@ -29,7 +29,7 @@ $row=mysqli_fetch_array($query);
 
                                 <input placeholder="Ingrese su Usuario" required type="text" class="form-control mb-3" name="usuario" value="<?php echo $row['usuario']  ?>">
                                 <input required type="text" class="form-control mb-3" name="nombre" placeholder="Ingrese su nombre y apellido" value="<?php echo $row['nombre']  ?>">
-                                <input required type="text" class="form-control mb-3" name="rut" placeholder="Ingrese su RUT" value="<?php echo $row['rut']  ?>">
+                                <input required type="text" class="form-control mb-3" name="direccion" placeholder="Ingrese su direccion" value="<?php echo $row['direccion']  ?>">
                                 <input required type="email" class="form-control mb-3" name="email"  placeholder="Ingrese su correo electrónico" value="<?php echo $row['email']  ?>">
                                 <input required type="password" class="form-control mb-3" name="pass" placeholder="Ingrese su contraseña" value="<?php echo $row['pass']  ?>">
                                 

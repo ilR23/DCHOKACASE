@@ -130,7 +130,9 @@ footer p{
 }
 
 /*=========================LOGIN================================*/
-
+#box{
+  overflow: scroll;
+}
 .bg{
     background-image: url(img/banner_login.webp);
     

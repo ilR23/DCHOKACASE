@@ -54,7 +54,7 @@
 
         <div class="container" id="lg">
                 <div class="row"> 
-                    <div class="col">
+                    <div class="col-12">
                         <h1>Ingrese datos</h1>
                             <form action="insertarCRUD.php" method="POST">
 
@@ -78,8 +78,14 @@
                             </form>
                     </div>
 
-                    <div class="col">
-                        <table class="table" >
+                    <div class="col-12" id="box">
+                        <h1>Buscar usuario</h1>
+                        <form action="gestion_usuario.php" method="POST">
+
+                            <input type="text" class="form-control mb-3" name="buscar" placeholder="Buscar" >
+                            <input type="submit" class="mb-4 btn btn-ini" value="Buscar">
+                        </form>
+                        <table class="table table-responsive" >
                             <thead class="table-warning table-striped">
                                 <tr>
                                     <th>Usuario</th>
@@ -98,6 +104,7 @@
 
                             <tbody>
                                     <?php
+                                       
                                         while($row=mysqli_fetch_array($query)){
                                     ?>
                                         <tr>
@@ -109,7 +116,7 @@
                                             <th><?php  echo $row['nacimiento']?></th>
                                             <th><?php  echo $row['edad']?></th>
                                             <th><?php  echo $row['email']?></th>
-                                            <th><?php  echo $row['pass']?></th>    
+                                            <th><?php  echo md5($row['pass'])?></th>    
                                             <th><a href="actualizar.php?id=<?php echo $row['rut'] ?>" class="btn btn-info">Editar</a></th>
                                             <th><a href="delete.php?id=<?php echo $row['rut'] ?>" class="btn btn-danger">Eliminar</a></th>                                        
                                         </tr>
