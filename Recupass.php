@@ -1,10 +1,3 @@
-<?php 
-    include("conexion.php");
-    $con=conectar();
-
-    $sql="SELECT *  FROM administracion";
-    $query=mysqli_query($con,$sql);
-?>
 <!DOCTYPE html>
 <html lang="es-ES">
 <head>
@@ -64,59 +57,59 @@
                 <div class="text-end mt-3">
                     <img src="img/schka.png" width="100" height="40" alt="chokl">
                 </div>
-                <h2 class="fw-bold text-center py-5">Bienvenido</h2>
+                <h2 class="fw-bold text-center py-5">Recuperar contraseña</h2>
 
-                <form action="validar.php" method="POST">
+                <form action="Recupass.php" method="POST">
                     <div class="mb-4">
-                        <label for="email" class="form-label">Correo electrónico</label>
-                        <input type="email" class="form-control" name="email" required placeholder="Ingrese su correo electrónico">
+                        <input type="text" class="form-control" name="email" required placeholder="Ingrese su correo electrónico">
                     </div>
-                    <div class="mb-4">
-                        <label for="pass" class="form-label">Password</label>
-                        <input type="password" class="form-control" name="pass" required placeholder="Ingrese su contraseña">
-                    </div>
-                    <div class="mb-4">
-                        <input type="checkbox" name="connected" class="form-check-input">
-                        <label for="connected" class="form-check-label">Mantenerme conectado</label>
-                    </div>
-                    <div class="d-grid">
-                        <button type="submit" class="btn btn-ini">Iniciar Sesión</button>
-                    </div>
-                    <div class="my-3">
-                        <span>No tienes cuenta? <a href="registro.php">Registrate aqui</a></span><br>
-                        <span><a href="Recupass.php">Recuperar password</a></span>
+                    <div class="d-grid mb-4">
+                        <input type="submit" class="btn btn-ini" value="Recordar contraseña" />
                     </div>
                 </form>
+                <?php
+        
+                    try{
+                        if(isset($_POST['email']) && !empty($_POST['email'])){
+                            $pass = substr( md5(microtime()), 1, 10);
+                            $mail = $_POST['email'];
+                            
+                            //Conexion con la base
+                            $conn = new mysqli("localhost", "root", "Pele2310", "dchokacase");
+                            // Check connection
+                            if ($conn->connect_error) {
+                                die("Connection failed: " . $conn->connect_error);
+                            } 
+                            
+                            $sql = "Update administracion Set pass='$pass' Where email='$mail'";
 
-                <!--Login redes sociales-->
-                <div class="container w-100 my-5" >
-                    <div class="row text-center">
-                        <div class="col-12">Iniciar sesión</div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <button class="btn btn-outline-primary w-100 my-1">
-                                <div class="row align-items-center">
-                                    <div class="col-2">
-                                        <i class="bi bi-facebook"></i>
-                                    </div>
-                                    <div class="col-10 ">Facebook</div>
-                                </div>
-                            </button>
+                            if ($conn->query($sql) === TRUE) {
+                                echo "Usuario modificado correctamente ";
+                                echo "<br>";
+                            } else {
+                                echo "Error modificando: " . $conn->error;
+                            }
+                            
+                            $to = $_POST['email'];//"destinatario@email.com";
+                            $from = "From: " . "DCHOKACASE" ;
+                            $subject = "Recordar contraseña";
+                            $message = "El sistema le asigno la siguiente clave " . $pass;
 
-                        </div>
-                        <div class="col">
-                            <button class="btn btn-outline-danger w-100 my-1">
-                                <div class="row align-items-center">
-                                    <div class="col-2">
-                                        <i class="bi bi-google"></i>
-                                    </div>
-                                    <div class="col-10 ">Google</div>
-                                </div>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+                            mail($to, $subject, $message, $from);
+                            echo 'Correo enviado satisfactoriamente a ' . $_POST['email'];
+                            echo "<br>";
+                            echo "Su nueva contraseña es: $pass";
+                            echo "<br>";
+                           
+                        }
+                        else 
+                            echo 'Informacion incompleta';
+                    }
+                    catch (Exception $e) {
+                        echo 'Excepción capturada: ',  $e->getMessage(), "\n";
+                    }
+                        
+                ?>
 
             </div>
         </div>
