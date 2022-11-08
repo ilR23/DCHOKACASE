@@ -64,7 +64,7 @@
                         <input type="text" class="form-control" name="email" required placeholder="Ingrese su correo electrónico">
                     </div>
                     <div class="d-grid mb-4">
-                        <input type="submit" class="btn btn-ini" value="Recordar contraseña" />
+                        <input type="submit" class="btn btn-ini" value="Recuperar contraseña" />
                     </div>
                 </form>
                 <?php
@@ -90,7 +90,7 @@
                                 echo "Error modificando: " . $conn->error;
                             }
                             
-                            $to = $_POST['email'];//"destinatario@email.com";
+                            $to = $_POST['email'];//"destinatario@email.com Servidor SMTP";
                             $from = "From: " . "DCHOKACASE" ;
                             $subject = "Recordar contraseña";
                             $message = "El sistema le asigno la siguiente clave " . $pass;
